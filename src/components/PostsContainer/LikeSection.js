@@ -4,15 +4,14 @@
 import React from "react";
 
 const LikeSection = props => {
-  console.log('likes', props);
   return (
     <div>
     <div
       className="like-section"
       key="likes-icons-container"
     >
-      <div className="like-section-wrapper" onClick = {props.updateLikes}>
-        <i className="far fa-heart" />
+      <div className="like-section-wrapper">
+      <i class="far fa-heart" onClick = {props.updateLikes}></i>
       </div>
       <div className="like-section-wrapper">
         <i className="far fa-comment" />
